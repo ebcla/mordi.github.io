@@ -113,3 +113,34 @@ document.getElementById("addToCalendar").addEventListener("click", (e) => {
 
   setTimeout(() => URL.revokeObjectURL(url), 5000);
 });
+// ---- RSVP ----
+const nameInput = document.getElementById("rsvpName");
+const rsvpBtn = document.getElementById("rsvpBtn");
+const rsvpList = document.getElementById("rsvpList");
+
+function loadRSVP(){
+  const names = JSON.parse(localStorage.getItem("rsvpNames") || "[]");
+  rsvpList.innerHTML = "";
+  names.forEach(n => {
+    const li = document.createElement("li");
+    li.textContent = n;
+    rsvpList.appendChild(li);
+  });
+}
+
+rsvpBtn.addEventListener("click", () => {
+  const name = nameInput.value.trim();
+  if(!name) return;
+
+  let names = JSON.parse(localStorage.getItem("rsvpNames") || "[]");
+
+  if(!names.includes(name)){
+    names.push(name);
+    localStorage.setItem("rsvpNames", JSON.stringify(names));
+  }
+
+  nameInput.value = "";
+  loadRSVP();
+});
+
+loadRSVP();
