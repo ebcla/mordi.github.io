@@ -1,14 +1,15 @@
 :root{
-  --bg: #0b1020;
-  --card: rgba(255,255,255,0.06);
-  --card2: rgba(255,255,255,0.09);
-  --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.68);
-  --line: rgba(255,255,255,0.12);
-  --accent: #67e8f9;
-  --accent2: #a78bfa;
-  --shadow: 0 10px 40px rgba(0,0,0,0.35);
+  --bg: #f4c430;           /* mustard yellow */
+  --card: rgba(0,0,60,0.06);
+  --card2: rgba(0,0,60,0.1);
+  --text: #0b1c3d;         /* dark blue */
+  --muted: #243b6b;
+  --line: rgba(0,0,60,0.15);
+  --accent: #0b1c3d;
+  --accent2: #0b1c3d;
+  --shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
+
 
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
