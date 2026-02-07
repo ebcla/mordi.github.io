@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mordi Pier to Pub</title>
+  <meta name="description" content="Family event page for the Mordi Pier to Pub swim + pub meal." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="badge">Family Event</div>
+        <div class="brand-title">Mordi Pier to Pub</div>
+      </div>
+
+      <nav class="nav">
+        <a href="#details">Details</a>
+        <a href="#map">Map</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#faq">FAQs</a>
+        <a class="btn btn-small" href="#rsvp">RSVP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Mordi Pier to Pub</h1>
+          <p class="sub">
+            A chill family swim along the water, then a meal at <strong>The Bridge Hotel</strong>.
+          </p>
+
+          <div class="hero-cards">
+            <div class="card">
+              <div class="label">Date</div>
+              <div class="value">28/02/2026</div>
+            </div>
+            <div class="card">
+              <div class="label">Start</div>
+              <div class="value">Mordialloc Pier</div>
+            </div>
+            <div class="card">
+              <div class="label">Distance</div>
+              <div class="value">~1.2 km</div>
+            </div>
+            <div class="card">
+              <div class="label">Finish</div>
+              <div class="value">Bridge Hotel (meal)</div>
+            </div>
+          </div>
+
+          <div class="hero-actions" id="rsvp">
+            <a class="btn" id="addToCalendar" href="#">Add to Calendar</a>
+            <a class="btn btn-ghost" href="mailto:?subject=Mordi%20Pier%20to%20Pub%20-%2028%2F02%2F2026&body=Event%20details%3A%0A%0ADate%3A%2028%2F02%2F2026%0AStart%3A%20Mordialloc%20Pier%0ADistance%3A%20~1.2km%20along%20the%20water%0APub%20meal%3A%20Bridge%20Hotel%0A%0AEvent%20page%3A%20%5Bpaste%20your%20site%20link%20here%5D">
+              Share via Email
+            </a>
+          </div>
+
+          <p class="fineprint">
+            Note: Times can be added/updated later — this page is the “single source of truth” for the fam.
+          </p>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-top">
+            <div class="panel-title">Quick Info</div>
+            <div class="pill">Melbourne • Bayside</div>
+          </div>
+
+          <div class="panel-list">
+            <div class="panel-row">
+              <span>Swim plan</span>
+              <span>Mordialloc Pier → along water (~1.2km)</span>
+            </div>
+            <div class="panel-row">
+              <span>After</span>
+              <span>Bridge Hotel meal</span>
+            </div>
+            <div class="panel-row">
+              <span>Who</span>
+              <span>Family</span>
+            </div>
+            <div class="panel-row">
+              <span>What to bring</span>
+              <span>Togs, towel, warm layer, dry clothes</span>
+            </div>
+          </div>
+
+          <div class="panel-note">
+            Want this to look more “official”? I can add a hero photo, countdown timer, and RSVP form.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section class="section" id="details">
+      <div class="container">
+        <div class="section-head">
+          <h2>Event Details</h2>
+          <p>Everything the fam needs in one place.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card big">
+            <h3>What’s happening</h3>
+            <p>
+              We’re starting at <strong>Mordialloc Pier</strong>, swimming along the water for roughly
+              <strong>1.2km</strong>, then heading to <strong>The Bridge Hotel</strong> for a pub meal.
+            </p>
+            <ul class="bullets">
+              <li>Friendly pace — no stress</li>
+              <li>We’ll regroup at key points</li>
+              <li>Meal after for anyone who wants to join (swimmers + non-swimmers welcome)</li>
+            </ul>
+          </div>
+
+          <div class="card big">
+            <h3>Location</h3>
+            <p><strong>Start:</strong> Mordialloc Pier</p>
+            <p><strong>After:</strong> Bridge Hotel</p>
+            <p class="muted">
+              If you want, we can add exact meeting spot + time, parking tips, and a clear swim finish point.
+            </p>
+            <div class="links">
+              <a class="link" id="mapsStart" target="_blank" rel="noreferrer">Open start in Google Maps →</a>
+              <a class="link" id="mapsPub" target="_blank" rel="noreferrer">Open Bridge Hotel in Google Maps →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="section" id="map">
+      <div class="container">
+        <div class="section-head">
+          <h2>Map</h2>
+          <p>Start + pub location. (We can add a route image later if you want it to look extra slick.)</p>
+        </div>
+
+        <div class="map-grid">
+          <div class="map-card">
+            <div class="map-label">Start — Mordialloc Pier</div>
+            <iframe
+              id="startMap"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="map-card">
+            <div class="map-label">Pub — Bridge Hotel</div>
+            <iframe
+              id="pubMap"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section class="section" id="schedule">
+      <div class="container">
+        <div class="section-head">
+          <h2>Schedule</h2>
+          <p>These are placeholders — you can edit the times anytime.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-time">9:00 AM</div>
+            <div class="t-body">
+              <div class="t-title">Meet at Mordialloc Pier</div>
+              <div class="t-desc">Quick hello, safety chat, gear check.</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-time">9:30 AM</div>
+            <div class="t-body">
+              <div class="t-title">Swim starts</div>
+              <div class="t-desc">Easy pace, stick together, regroup as needed.</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-time">10:15 AM</div>
+            <div class="t-body">
+              <div class="t-title">Swim finish + change</div>
+              <div class="t-desc">Towel up, warm layer, and head to the pub.</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-time">11:00 AM</div>
+            <div class="t-body">
+              <div class="t-title">Bridge Hotel meal</div>
+              <div class="t-desc">Food, laughs, and debrief.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQs</h2>
+          <p>Click to expand.</p>
+        </div>
+
+        <div class="faq">
+          <button class="faq-q" aria-expanded="false">
+            Do I have to swim to come?
+            <span class="chev">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>Nope — come to the pub meal only if you like.</p>
+          </div>
+
+          <button class="faq-q" aria-expanded="false">
+            What should I bring?
+            <span class="chev">▾</span>
+          </button>
+          <div class="faq-a">
+            <ul class="bullets">
+              <li>Swimmers/togs + goggles (optional)</li>
+              <li>Towel</li>
+              <li>Warm layer + dry clothes</li>
+              <li>Water bottle</li>
+            </ul>
+          </div>
+
+          <button class="faq-q" aria-expanded="false">
+            Is it kid-friendly?
+            <span class="chev">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>For the swim: only if you’re fully comfortable/safe and supervised. Pub meal is easy.</p>
+          </div>
+
+          <button class="faq-q" aria-expanded="false">
+            What if the weather is bad?
+            <span class="chev">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>We’ll make a call closer to the date. Worst case: skip the swim and just do the pub meal.</p>
+          </div>
+
+          <button class="faq-q" aria-expanded="false">
+            Can we add an RSVP list?
+            <span class="chev">▾</span>
+          </button>
+          <div class="faq-a">
+            <p>
+              Yes — easiest is a Google Form embedded on the page, or a simple “text Troy” button.
+              Tell me what you prefer and I’ll wire it in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-title">Mordi Pier to Pub</div>
+          <div class="footer-sub">28/02/2026 • Family event page</div>
+        </div>
+        <div class="footer-links">
+          <a href="#details">Details</a>
+          <a href="#map">Map</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#faq">FAQs</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
