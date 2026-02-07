@@ -335,4 +335,28 @@ p{ margin: 0 0 10px; }
   .map-grid{ grid-template-columns: 1fr; }
   .t-item{ grid-template-columns: 1fr; }
   .nav{ gap: 10px; }
+  .rsvp-box{
+  display:flex;
+  gap:12px;
+  margin-bottom:20px;
+  flex-wrap:wrap;
+}
+
+.rsvp-box input{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  font-size:16px;
+  min-width:200px;
+}
+
+#rsvpList{
+  padding-left:18px;
+}
+
+#rsvpList li{
+  margin:6px 0;
+  font-weight:600;
+}
+
 }
