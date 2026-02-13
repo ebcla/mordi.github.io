@@ -19,7 +19,7 @@ body{
 
   background-image: url("sand.png");
   background-repeat: repeat;
-  background-size: 1600px 1600px;
+  background-size: 1800px 1800px;
   background-color: var(--bg);
 }
 .site-header, main, footer {
