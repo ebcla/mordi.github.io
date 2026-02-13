@@ -112,9 +112,9 @@ body::before{
 .card{
   background:
    background:
-  radial-gradient(circle at 20% 30%, rgba(255,255,255,0.18), transparent 45%),
-  radial-gradient(circle at 80% 60%, rgba(255,255,255,0.14), transparent 50%),
-  linear-gradient(135deg, rgba(30,70,140,0.75), rgba(30,70,140,0.7));
+  radial-gradient(circle at 25% 30%, rgba(255,255,255,0.18), transparent 45%),
+  radial-gradient(circle at 75% 65%, rgba(255,255,255,0.14), transparent 50%),
+  linear-gradient(135deg, #2e63b8, #3b79d1);
 
   border-radius:14px;
   padding:14px;
@@ -128,9 +128,9 @@ body::before{
 .hero-panel{
   background:
     background:
-  radial-gradient(circle at 20% 30%, rgba(255,255,255,0.18), transparent 45%),
-  radial-gradient(circle at 80% 60%, rgba(255,255,255,0.14), transparent 50%),
-  linear-gradient(135deg, rgba(30,70,140,0.75), rgba(30,70,140,0.7));
+  radial-gradient(circle at 25% 30%, rgba(255,255,255,0.18), transparent 45%),
+  radial-gradient(circle at 75% 65%, rgba(255,255,255,0.14), transparent 50%),
+  linear-gradient(135deg, #2e63b8, #3b79d1);
 
   border-radius:16px;
   padding:16px;
