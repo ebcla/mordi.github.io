@@ -111,8 +111,8 @@ body::before{
 
 .card{
   /* translucent overlay + image */
-  background-image:
-    linear-gradient(rgba(255,255,255,0.30), rgba(255,255,255,0.30)),
+  :
+    linear-gradient(rgba(255,255,255,0.18), rgba(255,255,255,0.18)),
     url("water.png");
   background-repeat: no-repeat;
   background-size: cover;
