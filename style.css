@@ -268,4 +268,59 @@ body::before{
   .grid-2{ grid-template-columns:1fr; }
   .map-grid{ grid-template-columns:1fr; }
   .t-item{ grid-template-columns:1fr; }
+  
 }
+/* --- Quick Info mini boxes (inside .hero-panel) --- */
+.panel-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:12px;
+}
+
+.panel-title{
+  font-weight:900;
+  font-size:18px;
+}
+
+.pill{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.92);
+}
+
+.panel-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:10px;
+}
+
+.panel-row{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 12px;
+  border-radius:14px;
+
+  /* mini-box look */
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.16);
+}
+
+.panel-row span:first-child{
+  color: rgba(255,255,255,0.72);
+  font-weight:800;
+  min-width: 110px;
+}
+
+.panel-row span:last-child{
+  color: rgba(255,255,255,0.95);
+  font-weight:850;
+  text-align:right;
+}
+
